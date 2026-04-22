@@ -255,7 +255,7 @@ function HowItWorksPage({ onBack }) {
 
         <div className="hiw-hero">
           <div className="hiw-hero-icon">🔒</div>
-          <h1 className="hiw-title">How No-Logs AI Works</h1>
+          <h1 className="hiw-title">How Privai Works</h1>
           <p className="hiw-subtitle">
             A private, zero-retention chat interface powered by Groq's ultra-fast inference.
           </p>
@@ -505,7 +505,7 @@ function EmptyState({ hasKey, onOpenSettings }) {
   return (
     <div className="empty-state">
       <div className="empty-icon">🔒</div>
-      <p className="empty-title">No-Logs AI</p>
+      <p className="empty-title">Privai</p>
       {!hasKey ? (
         <>
           <p className="empty-sub">Add your Groq API key to start chatting</p>
@@ -696,8 +696,8 @@ export default function App() {
       {/* ── Header ── */}
       <header className="header">
         <div className="logo">
-          <div className="logo-icon">N</div>
-          <span className="logo-text">No-Logs AI</span>
+          <div className="logo-icon">P</div>
+          <span className="logo-text">Privai</span>
         </div>
 
         <div className="header-center">
