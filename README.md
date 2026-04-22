@@ -39,7 +39,7 @@
 
 ## 🌐 Overview
 
-**No-Logs AI** is a privacy-first AI chat interface built on the principle that your conversations should belong only to you — and only for as long as you choose. No message is ever written to a database, file, cookie, or external analytics service. Everything lives in the browser's RAM (`React useState`), and disappears permanently the moment you close the tab or click **Clear Chat**.
+**Privai** is a privacy-first AI chat interface built on the principle that your conversations should belong only to you — and only for as long as you choose. No message is ever written to a database, file, cookie, or external analytics service. Everything lives in the browser's RAM (`React useState`), and disappears permanently the moment you close the tab or click **Clear Chat**.
 
 ### Who is this for?
 
@@ -322,7 +322,7 @@ pip
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/no-logs-ai.git
+git clone https://github.com/yourusername/privai.git
 cd no-logs-ai
 ```
 
@@ -394,7 +394,7 @@ no-logs-ai/
 │
 ├── backend/
 │   ├── main.py              ← FastAPI server — stateless relay to Groq
-│   ├── .env                 ← Fallback API key (never commit this)
+│
 │   └── requirements.txt
 │
 └── README.md
