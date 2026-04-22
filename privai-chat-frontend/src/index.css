@@ -1,0 +1,115 @@
+/* ── index.css — Global Foundation ─────────────────────────────────────── */
+
+/* 1. Box model reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Root height — critical for full-screen chat layout */
+html,
+body,
+#root {
+  height: 100%;
+  /* Prevent iOS elastic bounce that can hide the footer */
+  overflow: hidden;
+}
+
+/* 3. Base typography & rendering */
+html {
+  font-size: 16px;
+  /* Smooth font scaling on zoom */
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #e8e8f0;
+  background-color: #0a0a0f;
+
+  /* Subpixel rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 4. Native element normalization */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Scrollbar — global dark style */
+::-webkit-scrollbar       { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #353548; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #454560; }
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #353548 transparent;
+}
+
+/* 6. Text selection */
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+  color: #e8e8f0;
+}
+
+/* 7. Focus — accessible but styled */
+:focus-visible {
+  outline: 2px solid rgba(99, 102, 241, 0.6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Remove default focus ring for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* 8. Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 9. Smooth scroll (for any anchor navigation) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 10. Pre / code global base */
+pre,
+code {
+  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code",
+    ui-monospace, "Courier New", monospace;
+}
