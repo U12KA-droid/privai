@@ -323,7 +323,7 @@ pip
 
 ```bash
 git clone https://github.com/yourusername/privai.git
-cd no-logs-ai
+cd privai
 ```
 
 ### 2. Start the Backend
