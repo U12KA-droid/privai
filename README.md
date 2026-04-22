@@ -322,7 +322,7 @@ pip
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/privai.git
+git clone https://github.com/U12KA-droid/privai
 cd privai
 ```
 
